@@ -29,6 +29,10 @@ a {
     text-decoration: none; 
 }
 
+hr {
+    display: none;
+}
+
 .header_1 {
     position: fixed;
     top: 13px;

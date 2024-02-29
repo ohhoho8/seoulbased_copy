@@ -1,14 +1,11 @@
 import React from "react";
 import "./index.css"
-import Header from "./Header";
-import Footer from "./Footer";
 import main_img from "./img/main.jpg"
 
 const Main = () => {
     return(
         <div>
             <div id="container">
-                <Header />
                 <div id="wrap">
                     <div id="container" style={{marginTop:'4%'}}>
                         <div id="contents" style={{width:'96%', margin: "0 auto"}}>
@@ -25,7 +22,6 @@ const Main = () => {
                     <hr className="layout" />
                 </div>
                 <hr className="layout" />
-                <Footer />
             </div>
         </div>
     )
