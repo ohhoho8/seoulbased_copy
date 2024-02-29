@@ -1,1 +1,0 @@
-# seoulbased_copy
