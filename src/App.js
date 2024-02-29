@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from "./Header";
-import Footer from "./Footer";
-import Main from "./Main";
-import TopList from "./TopList";
-import TopItem from "./TopItem";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
+import TopList from "./components/TopList";
+import TopItem from "./components/TopItem";
 
 function App() {
   return (
