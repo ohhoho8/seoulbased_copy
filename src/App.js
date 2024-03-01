@@ -14,6 +14,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/TOP" element={<TopList />} />
+          <Route path="/MADE" element={<TopList />} />
+          <Route path="/NEW-IN" element={<TopList />} />
+          <Route path="/BASIC" element={<TopList />} />
+          <Route path="/UNISEX" element={<TopList />} />
+          <Route path="/OUTER" element={<TopList />} />
+          <Route path="/BOTTOM" element={<TopList />} />
+          <Route path="/DRESS" element={<TopList />} />
+          <Route path="/SHOES-BAG-ACC" element={<TopList />} />
+          <Route path="/당일출고" element={<TopList />} />
+          <Route path="/SALE" element={<TopList />} />
           <Route path="/TOP_1" element={<TopItem />} />
         </Routes>
         <Footer />
