@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import TopList from "./components/TopList";
 import TopItem from "./components/TopItem";
+import DressList from "./components/DressList";
+import DressItem from "./components/DressItem";
 
 function App() {
   return (
@@ -20,11 +22,12 @@ function App() {
           <Route path="/UNISEX" element={<TopList />} />
           <Route path="/OUTER" element={<TopList />} />
           <Route path="/BOTTOM" element={<TopList />} />
-          <Route path="/DRESS" element={<TopList />} />
+          <Route path="/DRESS" element={<DressList />} />
           <Route path="/SHOES-BAG-ACC" element={<TopList />} />
           <Route path="/당일출고" element={<TopList />} />
           <Route path="/SALE" element={<TopList />} />
           <Route path="/TOP_1" element={<TopItem />} />
+          <Route path="/Dress_1" element={<DressItem />} />
         </Routes>
         <Footer />
       </div>

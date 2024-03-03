@@ -1,11 +1,11 @@
 import React from "react";
-import top1 from "../img/top1.webp";
+import dress1 from "../img/dress1.webp";
 
-const TopItem = () => {
+const DressItem = () => {
   const importImages = () => {
     let images = {};
-    for (let i = 1; i <= 40; i++) {
-      images[`top1_${i}`] = require(`../img/top1_${i}.jpg`);
+    for (let i = 1; i <= 28; i++) {
+      images[`dress1_${i}`] = require(`../img/dress1_${i}.jpg`);
     }
     return images;
   };
@@ -34,45 +34,36 @@ const TopItem = () => {
             margin: "10px 0 0 0px",
           }}
         >
-          <img src={top1} alt="top1" className="BigImage" />
+          <img src={dress1} alt="dress1" className="BigImage" />
           <div className="detail_section" style={{ marginTop: "30px" }}>
             <div className="prdDetail">
               <div>
                 <br />
                 <br />
                 <br />
-                체크를 사랑하시는 서둥이들 꼭 주목해주셔야 할 셔츠입니다
+                * 긴 기장감으로 고급스러운 분위기 연출 가능
+                <br />
+                * 차분한 컬러 구성
+                <br />
+                * 코튼 원단을 사용하여 무게감있고 탄탄한 핏감 연출 가능
+                <br />
+                * 허리벨트 포인트
+                <br />
+                * 레이어드 / 단독 등으로 활용도 높은 롱원피스
                 <br />
                 <br />
               </div>
               <div>
-                윈도페인 체크원단에 크링클로 편직된 원단을 사용하여 자연스럽고
-                독특한 주름이 들어가 있으며
-              </div>
-              <div>
-                크링클이 잡힌 원단으로 세탁 후에도 툭툭 털어서 주름걱정 없이
-                착용 가능합니다
-                <br />
-                <br />
-              </div>
-              <div>
-                단품 또는 여름철에는 이너 위에 툭 걸쳐 아우터로도
-                <br />
-                활용하기 좋은 제품입니다
-              </div>
-              <div>
-                <br />
-                <br />
                 <br />
                 <br />
                 Texture - cotton 100
                 <br />
                 <br />
                 <br />
-                Size - 어깨 51.5 가슴 55 암홀 25 팔길이 63 총장 77
+                Size - 어깨 37.5 가슴 46 허리 41.5 총장 125
                 <br />
                 <br />
-                Fitting color: all
+                Fitting color:
                 <br />
                 Fitting size : FREE
               </div>
@@ -100,21 +91,21 @@ const TopItem = () => {
         </div>
         <div className="section_right">
           <h2 style={{ fontWeight: "400", fontSize: "17px" }}>
-            미유 체크 셔츠
+            실비아 벨트 롱 원피스
           </h2>
           <table summary>
             <tbody>
               {/* <tr>
-                <td>
-                  <span style={{ fontSize: "18px", color: "#000000" }}>
-                    미유 체크 셔츠
-                  </span>
-                </td>
-              </tr> */}
+                    <td>
+                      <span style={{ fontSize: "18px", color: "#000000" }}>
+                        미유 체크 셔츠
+                      </span>
+                    </td>
+                  </tr> */}
               <tr>
                 <td style={{ whiteSpace: "pre-line" }}>
                   <span style={{ fontSize: "14px", color: "#000000" }}>
-                    <strong>44,000원</strong>
+                    <strong>62,000원</strong>
                     <input
                       id="product_price"
                       name="product_price"
@@ -153,4 +144,4 @@ const TopItem = () => {
   );
 };
 
-export default TopItem;
+export default DressItem;
