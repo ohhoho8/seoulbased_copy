@@ -35,7 +35,7 @@ const TopItem = () => {
         >
           <img src={top1} alt="top1" className="BigImage" style={{width: "100%"}} />
           <div className="section_right" style={{textAlign: "start"}}>
-            <h2 style={{ fontWeight: "400", fontSize: "5rem" }}>
+            <h2 style={{ fontWeight: "400", fontSize: "2vh" }}>
               미유 체크 셔츠
             </h2>
             <table summary>
@@ -49,7 +49,7 @@ const TopItem = () => {
                 </tr> */}
                 <tr>
                   <td style={{ whiteSpace: "pre-line" }}>
-                    <span style={{ fontSize: "3rem", color: "#000000" }}>
+                    <span style={{ fontSize: "1.5vh", color: "#000000" }}>
                       <strong>44,000원</strong>
                       <input
                         id="product_price"
@@ -62,14 +62,14 @@ const TopItem = () => {
                 </tr>
                 <tr>
                   <td style={{ whiteSpace: "pre-line" }}>
-                    <span style={{ fontSize: "2.5rem", color: "#555555" }}>
+                    <span style={{ fontSize: "1vh", color: "#555555" }}>
                       택배
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <td style={{ whiteSpace: "pre-line" }}>
-                    <span style={{ fontSize: "2.5rem", color: "#555555" }}>
+                    <span style={{ fontSize: "1vh", color: "#555555" }}>
                       <input
                         id="delivery_cost_prepaid"
                         name="delivery_cost_prepaid"

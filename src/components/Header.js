@@ -9,23 +9,19 @@ const Header = () => {
       <div className="header_1">
         <style>
           @import url('https://fonts.cdnfonts.com/css/rosehot-free-version');
+          fontSize: "3vh"
         </style>
         <a href="/" className="logo">
           SEOULBASED
         </a>
       </div>
       <div className="header_2">
-        <img
-          src={search_img}
-          alt="search"
-          style={{ width: "5%", verticalAlign: "middle" }}
-        />
         <a
           href="https://www.instagram.com/seoulbased.kr"
           target="_blank"
           className="logo"
           rel="noopener noreferrer"
-          style={{ fontFamily: "roboto", fontWeight: "700", fontSize: "7rem" }}
+          style={{ fontFamily: "roboto", fontWeight: "700", fontSize: "3vh" }}
         >
           Instagram
         </a>

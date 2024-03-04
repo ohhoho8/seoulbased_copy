@@ -64,7 +64,7 @@ hr {
 
 .sidebar_cate_big a {
   font-family: "Roboto", sans-serif;
-  font-size: 5rem;
+  font-size: 1.5vh;
   padding-inline-start: 40px;
 }
 
@@ -103,7 +103,7 @@ hr {
   text-align: left;
   bottom: 0px;
   width: 100%;
-  font-size: 3rem;
+  font-size: 1vh;
   color: #000;
 }
 
@@ -116,7 +116,7 @@ hr {
   height:100%; */
   position: relative;
   font-family: malgun gothic, sans-serif;
-  font-size: 4rem;
+  font-size: 1vh;
   color: #000000;
   font-style: normal;
   font-weight: 400;
