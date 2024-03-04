@@ -26,7 +26,8 @@ const TopList = () => {
           overflowX: "hidden",
         }}
       >
-        <table style={{ width: "100%" }}>
+        <table className="list" style={{ width: "100%" }}>
+          <tbody>
           <tr>
             <td style={{ width: "25%", maxWidth: "25%" }}>
               <Link to="/TOP_1">
@@ -189,6 +190,7 @@ const TopList = () => {
               </div>
             </td>
           </tr>
+          </tbody>
         </table>
         <br />
         <br />

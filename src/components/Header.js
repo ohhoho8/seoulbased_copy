@@ -18,14 +18,14 @@ const Header = () => {
         <img
           src={search_img}
           alt="search"
-          style={{ width: "15px", verticalAlign: "middle" }}
+          style={{ width: "5%", verticalAlign: "middle" }}
         />
         <a
           href="https://www.instagram.com/seoulbased.kr"
           target="_blank"
           className="logo"
           rel="noopener noreferrer"
-          style={{ fontFamily: "roboto", fontWeight: "700" }}
+          style={{ fontFamily: "roboto", fontWeight: "700", fontSize: "7rem" }}
         >
           Instagram
         </a>

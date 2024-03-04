@@ -17,7 +17,6 @@ const TopItem = () => {
       <div
         id="contents"
         style={{
-          display: "flex",
           width: "96%",
           margin: "0 auto",
           // clear: "both",
@@ -34,7 +33,57 @@ const TopItem = () => {
             margin: "10px 0 0 0px",
           }}
         >
-          <img src={top1} alt="top1" className="BigImage" />
+          <img src={top1} alt="top1" className="BigImage" style={{width: "100%"}} />
+          <div className="section_right" style={{textAlign: "start"}}>
+            <h2 style={{ fontWeight: "400", fontSize: "5rem" }}>
+              미유 체크 셔츠
+            </h2>
+            <table summary>
+              <tbody>
+                {/* <tr>
+                  <td>
+                    <span style={{ fontSize: "18px", color: "#000000" }}>
+                      미유 체크 셔츠
+                    </span>
+                  </td>
+                </tr> */}
+                <tr>
+                  <td style={{ whiteSpace: "pre-line" }}>
+                    <span style={{ fontSize: "3rem", color: "#000000" }}>
+                      <strong>44,000원</strong>
+                      <input
+                        id="product_price"
+                        name="product_price"
+                        value
+                        type="hidden"
+                      ></input>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ whiteSpace: "pre-line" }}>
+                    <span style={{ fontSize: "2.5rem", color: "#555555" }}>
+                      택배
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ whiteSpace: "pre-line" }}>
+                    <span style={{ fontSize: "2.5rem", color: "#555555" }}>
+                      <input
+                        id="delivery_cost_prepaid"
+                        name="delivery_cost_prepaid"
+                        value="P"
+                        type="hidden"
+                      ></input>
+                      <strong>3,000원</strong>
+                      (100,000원 이상 구매 시 무료)
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div className="detail_section" style={{ marginTop: "30px" }}>
             <div className="prdDetail">
               <div>
@@ -93,60 +142,10 @@ const TopItem = () => {
                     height: "40px",
                   }}
                 ></div>
-                <img src={images[key]} alt={"image" + key} />
+                <img src={images[key]} alt={"image" + key} style={{width: "50%"}} />
               </div>
             ))}
           </div>
-        </div>
-        <div className="section_right">
-          <h2 style={{ fontWeight: "400", fontSize: "17px" }}>
-            미유 체크 셔츠
-          </h2>
-          <table summary>
-            <tbody>
-              {/* <tr>
-                <td>
-                  <span style={{ fontSize: "18px", color: "#000000" }}>
-                    미유 체크 셔츠
-                  </span>
-                </td>
-              </tr> */}
-              <tr>
-                <td style={{ whiteSpace: "pre-line" }}>
-                  <span style={{ fontSize: "14px", color: "#000000" }}>
-                    <strong>44,000원</strong>
-                    <input
-                      id="product_price"
-                      name="product_price"
-                      value
-                      type="hidden"
-                    ></input>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td style={{ whiteSpace: "pre-line" }}>
-                  <span style={{ fontSize: "12px", color: "#555555" }}>
-                    택배
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td style={{ whiteSpace: "pre-line" }}>
-                  <span style={{ fontSize: "12px", color: "#555555" }}>
-                    <input
-                      id="delivery_cost_prepaid"
-                      name="delivery_cost_prepaid"
-                      value="P"
-                      type="hidden"
-                    ></input>
-                    <strong>3,000원</strong>
-                    (100,000원 이상 구매 시 무료)
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
