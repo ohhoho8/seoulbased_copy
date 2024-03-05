@@ -35,7 +35,7 @@ const DressItem = () => {
         >
           <img src={dress1} alt="dress1" className="BigImage" style={{width: "100%"}} />
           <div className="section_right" style={{textAlign: "start"}}>
-            <h2 style={{ fontWeight: "400", fontSize: "2vh" }}>
+            <h2 style={{ fontWeight: "400", fontSize: "2vw" }}>
               실비아 벨트 롱 원피스
             </h2>
             <table summary>
@@ -49,7 +49,7 @@ const DressItem = () => {
                     </tr> */}
                 <tr>
                   <td style={{ whiteSpace: "pre-line" }}>
-                    <span style={{ fontSize: "1.5vh", color: "#000000" }}>
+                    <span style={{ fontSize: "1.5vw", color: "#000000" }}>
                       <strong>62,000원</strong>
                       <input
                         id="product_price"
@@ -62,14 +62,14 @@ const DressItem = () => {
                 </tr>
                 <tr>
                   <td style={{ whiteSpace: "pre-line" }}>
-                    <span style={{ fontSize: "1vh", color: "#555555" }}>
+                    <span style={{ fontSize: "1vw", color: "#555555" }}>
                       택배
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <td style={{ whiteSpace: "pre-line" }}>
-                    <span style={{ fontSize: "1vh", color: "#555555" }}>
+                    <span style={{ fontSize: "1vw", color: "#555555" }}>
                       <input
                         id="delivery_cost_prepaid"
                         name="delivery_cost_prepaid"

@@ -62,11 +62,18 @@ hr {
   margin: 6% 0 0px 0;
 }
 
-.sidebar_cate_big a {
+.sidebar_cate_big {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5vh;
-  padding-inline-start: 40px;
+  font-size: 1.5vw;
+  padding-inline-start: 2vw;
 }
+
+/* @media screen and (max-width: 665px) {
+  .sidebar_cate_big {
+    font-size: 2vw;
+    padding-inline-start: 2vw;
+  }
+} */
 
 .footer_1 {
   position: fixed;
@@ -103,7 +110,7 @@ hr {
   text-align: left;
   bottom: 0px;
   width: 100%;
-  font-size: 1vh;
+  font-size: 1vw;
   color: #000;
 }
 
@@ -116,7 +123,7 @@ hr {
   height:100%; */
   position: relative;
   font-family: malgun gothic, sans-serif;
-  font-size: 1vh;
+  font-size: 1vw;
   color: #000000;
   font-style: normal;
   font-weight: 400;
@@ -130,5 +137,5 @@ hr {
 
 .list {
   border-collapse: separate;
-  border-spacing: 2vh;
+  border-spacing: 2vw;
 }

@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
-import search_img from "../img/search.png";
 
 const Header = () => {
+  const isSmallScreen = window.innerWidth <= 665;
+
   return (
     <>
       <div className="header_1">
         <style>
           @import url('https://fonts.cdnfonts.com/css/rosehot-free-version');
-          fontSize: "3vh"
+          fontSize: "3vw"
         </style>
         <a href="/" className="logo">
           SEOULBASED
@@ -21,7 +22,7 @@ const Header = () => {
           target="_blank"
           className="logo"
           rel="noopener noreferrer"
-          style={{ fontFamily: "roboto", fontWeight: "700", fontSize: "3vh" }}
+          style={{ fontFamily: "roboto", fontWeight: "700", fontSize: "3vw" }}
         >
           Instagram
         </a>
@@ -34,6 +35,7 @@ const Header = () => {
           <Link to="/UNISEX">UNISEX</Link>
           <Link to="/OUTER">OUTER</Link>
           <Link to="/TOP">TOP</Link>
+          {isSmallScreen&&<br />}
           <Link to="/BOTTOM">BOTTOM</Link>
           <Link to="/DRESS">DRESS</Link>
           <Link to="/SHOES-BAG-ACC">SHOES / BAG / ACC</Link>
