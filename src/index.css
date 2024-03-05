@@ -49,6 +49,8 @@ hr {
   right: 2%;
   z-index: 99999999999999999999;
   text-align: right;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
@@ -91,6 +93,16 @@ hr {
 .footer_1_right {
   float: right;
   margin: 9px 1.4% 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.cartNum {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.3vw;
+    font-size: 0.5vw;
 }
 
 .footer_2 {
@@ -158,4 +170,10 @@ hr {
 .list {
   border-collapse: separate;
   border-spacing: 1vw;
+}
+
+.CartButton {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
 }

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import top1 from "../img/top1.webp";
+import { CartContext } from "../CartContext";
 
 const TopItem = () => {
   const isSmallScreen = window.innerWidth <= 665;
+  const {cart, addToCart} =useContext(CartContext);
 
   const importImages = () => {
     let images = {};
@@ -36,7 +38,7 @@ const TopItem = () => {
           }}
         >
           <img src={top1} alt="top1" className="BigImage" style={{width: "100%"}} />
-          {isSmallScreen&&<div className="section_right" style={{textAlign: "start"}}>
+          {isSmallScreen&&(<div className="section_right" style={{textAlign: "start"}}>
             <h2 style={{ fontWeight: "400", fontSize: "2vw" }}>
               미유 체크 셔츠
             </h2>
@@ -85,7 +87,8 @@ const TopItem = () => {
                 </tr>
               </tbody>
             </table>
-          </div>}
+            <button className="CartButton" onClick={()=>addToCart("top1")}>장바구니 담기</button>
+          </div>)}
           <div className="detail_section" style={{ marginTop: "30px" }}>
             <div className="prdDetail">
               <div>
@@ -199,6 +202,7 @@ const TopItem = () => {
                 </tr>
               </tbody>
             </table>
+            <button className="CartButton" onClick={()=>addToCart("top1")}>장바구니 담기</button>
           </div>}
       </div>
     </div>

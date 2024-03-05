@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import "../index.css";
+import { CartContext } from "../CartContext";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const isSmallScreen = window.innerWidth <= 665;
+  const {cart} =useContext(CartContext);
 
   return (
     <>
@@ -10,7 +13,7 @@ const Footer = () => {
         <div className="footer_1_left">
           Login Join My Accout Order list Notice QnA Review
         </div>
-        {isSmallScreen?<div></div>:<div className="footer_1_right">Shopping cart</div>}
+      <div className="footer_1_right"><div className="cartNum">{cart.length}</div><Link to="/Cart">Shopping cart</Link></div>
       </div>
       <div className="footer_2">
         <div style={{ marginLeft: "2%" }}>

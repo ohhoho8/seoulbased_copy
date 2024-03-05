@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./CartContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
@@ -7,12 +8,16 @@ import TopList from "./components/TopList";
 import TopItem from "./components/TopItem";
 import DressList from "./components/DressList";
 import DressItem from "./components/DressItem";
+import Cart from "./components/Cart";
 
 function App() {
+  const [cart,setCart] = useState([])
+
   return (
-    <Router>
+    <CartProvider>
+      <Router>
       <div className="App">
-        <Header />
+        <Header cart={cart} setCart={setCart}/>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/TOP" element={<TopList />} />
@@ -26,12 +31,14 @@ function App() {
           <Route path="/SHOES-BAG-ACC" element={<TopList />} />
           <Route path="/당일출고" element={<TopList />} />
           <Route path="/SALE" element={<TopList />} />
-          <Route path="/TOP_1" element={<TopItem />} />
+          <Route path="/TOP_1" element={<TopItem />} cart={cart} setCart={setCart}/>
           <Route path="/Dress_1" element={<DressItem />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
         <Footer />
       </div>
-    </Router>
+      </Router>
+    </CartProvider>
   );
 }
 

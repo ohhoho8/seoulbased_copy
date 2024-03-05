@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import dress1 from "../img/dress1.webp";
+import { CartContext } from "../CartContext";
 
 const DressItem = () => {
   const isSmallScreen = window.innerWidth <= 665;
+  const {cart, addToCart} =useContext(CartContext);
 
   const importImages = () => {
     let images = {};
@@ -86,6 +88,7 @@ const DressItem = () => {
               </tbody>
             </table>
           </div>}
+          <button className="CartButton" onClick={()=>addToCart("셔츠")}>장바구니 담기</button>
           <div className="detail_section" style={{ marginTop: "30px" }}>
             <div className="prdDetail">
               <div>
@@ -190,6 +193,7 @@ const DressItem = () => {
                 </tr>
               </tbody>
             </table>
+            <button className="CartButton" onClick={()=>addToCart("dress1")}>장바구니 담기</button>
           </div>}
       </div>
     </div>
