@@ -65,15 +65,13 @@ hr {
 .sidebar_cate_big {
   font-family: "Roboto", sans-serif;
   font-size: 1.5vw;
-  padding-inline-start: 2vw;
 }
 
-/* @media screen and (max-width: 665px) {
+@media screen and (max-width: 665px) {
   .sidebar_cate_big {
     font-size: 2vw;
-    padding-inline-start: 2vw;
   }
-} */
+}
 
 .footer_1 {
   position: fixed;
@@ -103,6 +101,28 @@ hr {
   color: #ffffff;
   bottom: 0px;
   z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+@media screen and (max-width: 665px) {
+    .footer_1 {
+      font-size: 1.3vw;
+      height: 1vw;
+    }
+    .footer_2{
+        font-size: 1.3vw;
+        height: 3vw;
+    }
+  }
+
+#contents {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 665px) {
+    #contents {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -137,5 +157,5 @@ hr {
 
 .list {
   border-collapse: separate;
-  border-spacing: 2vw;
+  border-spacing: 1vw;
 }

@@ -2,6 +2,8 @@ import React from "react";
 import top1 from "../img/top1.webp";
 
 const TopItem = () => {
+  const isSmallScreen = window.innerWidth <= 665;
+
   const importImages = () => {
     let images = {};
     for (let i = 1; i <= 40; i++) {
@@ -34,7 +36,7 @@ const TopItem = () => {
           }}
         >
           <img src={top1} alt="top1" className="BigImage" style={{width: "100%"}} />
-          <div className="section_right" style={{textAlign: "start"}}>
+          {isSmallScreen&&<div className="section_right" style={{textAlign: "start"}}>
             <h2 style={{ fontWeight: "400", fontSize: "2vw" }}>
               미유 체크 셔츠
             </h2>
@@ -83,7 +85,7 @@ const TopItem = () => {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div>}
           <div className="detail_section" style={{ marginTop: "30px" }}>
             <div className="prdDetail">
               <div>
@@ -147,6 +149,57 @@ const TopItem = () => {
             ))}
           </div>
         </div>
+        <div style={{marginRight: "2vw"}}></div>
+        {!isSmallScreen && <div className="section_right" style={{textAlign: "start"}}>
+            <h2 style={{ fontWeight: "400", fontSize: "2vw" }}>
+              미유 체크 셔츠
+            </h2>
+            <table summary>
+              <tbody>
+                {/* <tr>
+                  <td>
+                    <span style={{ fontSize: "18px", color: "#000000" }}>
+                      미유 체크 셔츠
+                    </span>
+                  </td>
+                </tr> */}
+                <tr>
+                  <td style={{ whiteSpace: "pre-line" }}>
+                    <span style={{ fontSize: "1.5vw", color: "#000000" }}>
+                      <strong>44,000원</strong>
+                      <input
+                        id="product_price"
+                        name="product_price"
+                        value
+                        type="hidden"
+                      ></input>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ whiteSpace: "pre-line" }}>
+                    <span style={{ fontSize: "1vw", color: "#555555" }}>
+                      택배
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ whiteSpace: "pre-line" }}>
+                    <span style={{ fontSize: "1vw", color: "#555555" }}>
+                      <input
+                        id="delivery_cost_prepaid"
+                        name="delivery_cost_prepaid"
+                        value="P"
+                        type="hidden"
+                      ></input>
+                      <strong>3,000원</strong>
+                      (100,000원 이상 구매 시 무료)
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>}
       </div>
     </div>
   );

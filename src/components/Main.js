@@ -3,15 +3,18 @@ import "../index.css";
 import main_img from "../img/main.jpg";
 
 const Main = () => {
+  const isSmallScreen = window.innerWidth <= 665;
+
   return (
     <div>
       <div id="container">
         <div id="wrap">
           <div id="container" style={{ marginTop: "4%" }}>
-            <div id="contents" style={{ width: "96%", margin: "0 auto" }}>
+            <div  style={{ width: "96%", margin: "0 auto" }}>
               <div className="swiper-slide">
                 <img src={main_img} alt="main.jpg" width="100%" />
               </div>
+              
               <div
                 style={{
                   fontSize: "3vw",
@@ -25,7 +28,7 @@ const Main = () => {
               </div>
             </div>
             <hr className="layout" />
-            <div style={{ height: "100px" }}></div>
+            {isSmallScreen ? <div style={{height: "5vh"}}></div> : <div style={{height: "15vh"}}></div>}
           </div>
           <hr className="layout" />
         </div>

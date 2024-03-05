@@ -29,18 +29,18 @@ const Header = () => {
       </div>
       <div className="category">
         <div className="sidebar_cate_big">
-          <Link to="/MADE">MADE</Link>
-          <Link to="/NEW-IN">NEW IN</Link>
-          <Link to="/BASIC">BASIC</Link>
-          <Link to="/UNISEX">UNISEX</Link>
-          <Link to="/OUTER">OUTER</Link>
+          <Link to="/MADE">MADE  </Link>
+          <Link to="/NEW-IN">NEW IN  </Link>
+          <Link to="/BASIC">BASIC  </Link>
+          <Link to="/UNISEX">UNISEX  </Link>
+          <Link to="/OUTER">OUTER  </Link>
           <Link to="/TOP">TOP</Link>
           {isSmallScreen&&<br />}
-          <Link to="/BOTTOM">BOTTOM</Link>
-          <Link to="/DRESS">DRESS</Link>
-          <Link to="/SHOES-BAG-ACC">SHOES / BAG / ACC</Link>
-          <Link to="/당일출고">당일출고</Link>
-          <Link to="/SALE">SALE</Link>
+          <Link to="/BOTTOM">  BOTTOM</Link>
+          <Link to="/DRESS">  DRESS</Link>
+          <Link to="/SHOES-BAG-ACC">  SHOES / BAG / ACC</Link>
+          <Link to="/당일출고">  당일출고</Link>
+          <Link to="/SALE">  SALE</Link>
         </div>
       </div>
     </>

@@ -2,13 +2,15 @@ import React from "react";
 import "../index.css";
 
 const Footer = () => {
+  const isSmallScreen = window.innerWidth <= 665;
+
   return (
     <>
       <div className="footer_1">
         <div className="footer_1_left">
           Login Join My Accout Order list Notice QnA Review
         </div>
-        <div className="footer_1_right">Shopping cart</div>
+        {isSmallScreen?<div></div>:<div className="footer_1_right">Shopping cart</div>}
       </div>
       <div className="footer_2">
         <div style={{ marginLeft: "2%" }}>
